@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Starshot — Studio foto mandiri pertama yang berpihak pada kamu. Privat, estetik, file langsung jadi. Booking sesi sekarang." />
+  <meta property="og:title" content="Starshot — Your Studio, Your Rules." />
+  <meta property="og:description" content="Foto profesional tanpa fotografer. Privat, estetik, hasil langsung di tangan." />
+  <meta property="og:type" content="website" />
+  <title>Starshot — Your Studio, Your Rules.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav" class="ss-nav" aria-label="Main navigation">
+    <div class="container-xl d-flex align-items-center justify-content-between">
+      <a href="#" class="ss-logo" aria-label="Starshot Home">STARSHOT</a>
+      <ul class="ss-nav__links" role="list">
+        <li><a href="#why">Kenapa Kami</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#pricing">Paket</a></li>
+        <li><a href="#testimonials">Review</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#booking" class="ss-btn ss-btn--sm d-none d-md-inline-flex" id="nav-cta">Booking</a>
+        <button class="ss-nav__burger" id="burger-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV DRAWER -->
+  <nav id="mobile-nav" class="ss-nav__mobile" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#why" class="mobile-link">Kenapa Kami</a>
+    <a href="#gallery" class="mobile-link">Galeri</a>
+    <a href="#pricing" class="mobile-link">Paket</a>
+    <a href="#testimonials" class="mobile-link">Review</a>
+    <a href="#booking" class="ss-btn ss-btn--dark">Booking Sesi &rarr;</a>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="ss-hero">
+    <div class="container-xl ss-hero__grid">
+      <div class="ss-hero__copy">
+        <p class="ss-label">Self-Photo Studio &middot; Jakarta</p>
+        <h1 class="ss-hero__headline">
+          Your <em>moment.</em><br />
+          Your <em>frame.</em><br />
+          Zero awkward.
+        </h1>
+        <p class="ss-hero__sub">
+          Studio foto mandiri pertama yang sepenuhnya untukmu. Tidak ada fotografer asing. Tidak ada antrean panjang. Hanya kamu, lampu yang sempurna, dan momen yang jujur.
+        </p>
+        <div class="ss-hero__actions">
+          <a href="#booking" class="ss-btn ss-btn--dark" id="hero-cta-booking">Booking Sesi &rarr;</a>
+          <a href="#gallery" class="ss-btn ss-btn--ghost" id="hero-cta-gallery">Lihat Galeri</a>
+        </div>
+        <div class="ss-hero__stats" aria-label="Statistics">
+          <div class="ss-stat">
+            <span class="ss-stat__num">1200+</span>
+            <span class="ss-stat__label">Sesi Selesai</span>
+          </div>
+          <div class="ss-stat__divider"></div>
+          <div class="ss-stat">
+            <span class="ss-stat__num">4.9&#9733;</span>
+            <span class="ss-stat__label">Rating Google</span>
+          </div>
+          <div class="ss-stat__divider"></div>
+          <div class="ss-stat">
+            <span class="ss-stat__num">&lt;1h</span>
+            <span class="ss-stat__label">File Siap</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ss-hero__visual" aria-hidden="true">
+        <div class="ss-hero__img-wrap">
+          <img
+            src="assets/studio_hero.jpg"
+            alt="Interior Starshot Self-Photo Studio"
+            width="680"
+            height="900"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+        <div class="ss-hero__badge" aria-label="Open today">
+          <span class="dot"></span> Buka hari ini &middot; 09.00 &ndash; 22.00
+        </div>
+      </div>
+    </div>
+    <div class="ss-scroll-hint" aria-hidden="true"><span></span></div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="ss-marquee" aria-hidden="true">
+    <div class="ss-marquee__track">
+      <span>Tanpa Fotografer</span><span class="dot">&middot;</span>
+      <span>File Digital Instan</span><span class="dot">&middot;</span>
+      <span>Properti Estetik Lengkap</span><span class="dot">&middot;</span>
+      <span>Ruangan Privat</span><span class="dot">&middot;</span>
+      <span>Booking Online 24 Jam</span><span class="dot">&middot;</span>
+      <span>Tanpa Fotografer</span><span class="dot">&middot;</span>
+      <span>File Digital Instan</span><span class="dot">&middot;</span>
+      <span>Properti Estetik Lengkap</span><span class="dot">&middot;</span>
+      <span>Ruangan Privat</span><span class="dot">&middot;</span>
+      <span>Booking Online 24 Jam</span><span class="dot">&middot;</span>
+    </div>
+  </div>
+
+  <!-- WHY / VALUE PROP -->
+  <section id="why" class="ss-section ss-why" aria-labelledby="why-heading">
+    <div class="container-xl">
+      <div class="ss-section__header">
+        <p class="ss-label">Kenapa Starshot?</p>
+        <h2 id="why-heading" class="ss-section__title">Tiga hal yang membuatmu<br /><em>tidak mau balik ke studio lama.</em></h2>
+      </div>
+      <div class="row g-0 ss-why__grid">
+        <div class="col-md-4">
+          <article class="ss-why__card" id="why-privacy">
+            <div class="ss-why__num" aria-hidden="true">01</div>
+            <h3 class="ss-why__card-title">Ruang Privat,<br />Tanpa Fotografer</h3>
+            <p class="ss-why__card-body">Ekspresimu bukan untuk ditonton orang asing. Di Starshot, ruangan hanya untukmu &mdash; kamu yang pegang remote, kamu yang atur segalanya. Introvert? Perfect.</p>
+            <div class="ss-why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="ss-why__card ss-why__card--mid" id="why-instant">
+            <div class="ss-why__num" aria-hidden="true">02</div>
+            <h3 class="ss-why__card-title">File Digital<br />Langsung di Tangan</h3>
+            <p class="ss-why__card-body">Tidak ada "tunggu 3 hari ya". Foto high-res sudah ada di HP-mu sebelum kamu sampai rumah. Langsung bisa dipost, langsung bisa dipakai.</p>
+            <div class="ss-why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z"/></svg>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="ss-why__card" id="why-props">
+            <div class="ss-why__num" aria-hidden="true">03</div>
+            <h3 class="ss-why__card-title">Properti Estetik<br />Siap Pakai</h3>
+            <p class="ss-why__card-body">Dari backdrop premium, neon sign, hingga kursi vintage &mdash; semua sudah disiapkan. Datang tinggal pose. Tidak perlu bawa apa-apa, semua ada.</p>
+            <div class="ss-why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="0"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="ss-section ss-gallery-section" aria-labelledby="gallery-heading">
+    <div class="container-xl">
+      <div class="ss-section__header">
+        <p class="ss-label">Galeri</p>
+        <h2 id="gallery-heading" class="ss-section__title">Hasil nyata.<br /><em>Bukan rekayasa filter.</em></h2>
+      </div>
+    </div>
+    <gallery-carousel id="main-gallery" aria-label="Galeri foto Starshot Studio"></gallery-carousel>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="ss-section ss-pricing" aria-labelledby="pricing-heading">
+    <div class="container-xl">
+      <div class="ss-section__header">
+        <p class="ss-label">Paket Sesi</p>
+        <h2 id="pricing-heading" class="ss-section__title">Transparan.<br /><em>Tidak ada biaya tersembunyi.</em></h2>
+      </div>
+      <div class="row g-4 justify-content-center ss-pricing__grid">
+        <div class="col-md-5">
+          <article class="ss-pricing__card" id="pkg-basic">
+            <div class="ss-pricing__top">
+              <p class="ss-pricing__pkg-label">Basic</p>
+              <p class="ss-pricing__tagline">Perfect untuk solo &amp; couple session</p>
+            </div>
+            <div class="ss-pricing__price">
+              <span class="ss-pricing__currency">Rp</span>
+              <span class="ss-pricing__amount">75.000</span>
+              <span class="ss-pricing__per">/ sesi</span>
+            </div>
+            <ul class="ss-pricing__features" role="list">
+              <li><span class="check" aria-hidden="true">&#10003;</span> Durasi 1 jam</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> 1&ndash;2 orang</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> Akses semua backdrop &amp; properti</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> 20 foto high-res + link download instan</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> Remote shutter &amp; tripod premium</li>
+            </ul>
+            <a href="#booking" class="ss-btn ss-btn--outline w-100" id="cta-basic">Pilih Basic &rarr;</a>
+          </article>
+        </div>
+        <div class="col-md-5">
+          <article class="ss-pricing__card ss-pricing__card--featured" id="pkg-group">
+            <div class="ss-pricing__badge" aria-label="Most popular">Paling Laku</div>
+            <div class="ss-pricing__top">
+              <p class="ss-pricing__pkg-label">Group</p>
+              <p class="ss-pricing__tagline">Cocok untuk geng &amp; konten bareng</p>
+            </div>
+            <div class="ss-pricing__price">
+              <span class="ss-pricing__currency">Rp</span>
+              <span class="ss-pricing__amount">130.000</span>
+              <span class="ss-pricing__per">/ sesi</span>
+            </div>
+            <ul class="ss-pricing__features" role="list">
+              <li><span class="check" aria-hidden="true">&#10003;</span> Durasi 1,5 jam</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> 3&ndash;5 orang</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> Akses semua backdrop &amp; properti</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> 40 foto high-res + link download instan</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> Remote shutter &amp; tripod premium</li>
+              <li><span class="check" aria-hidden="true">&#10003;</span> <strong>Soft editing gratis (5 foto pilihan)</strong></li>
+            </ul>
+            <a href="#booking" class="ss-btn ss-btn--dark w-100" id="cta-group">Pilih Group &rarr;</a>
+          </article>
+        </div>
+      </div>
+      <p class="ss-pricing__note">Semua paket sudah termasuk akses properti penuh &middot; Tidak ada biaya tambahan tersembunyi</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="ss-section ss-testimonials" aria-labelledby="testi-heading">
+    <div class="container-xl">
+      <div class="ss-section__header">
+        <p class="ss-label">Kata Mereka</p>
+        <h2 id="testi-heading" class="ss-section__title">Bukan promo.<br /><em>Beneran mereka bilang ini.</em></h2>
+      </div>
+      <div class="row g-4 ss-testi__grid">
+        <div class="col-md-4">
+          <blockquote class="ss-testi__card" id="testi-1">
+            <div class="ss-testi__stars" aria-label="5 bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="ss-testi__quote">"Literally solved semua anxiety aku soal foto. Ga ada orang nonton, ga ada yang kasih arahan aneh-aneh. Vibes-nya cozy banget, hasil fotonya aesthetic parah. 10/10 would come back lagi."</p>
+            <footer class="ss-testi__author">
+              <div class="ss-testi__avatar" aria-hidden="true">RH</div>
+              <div>
+                <cite class="ss-testi__name">Raisa H.</cite>
+                <span class="ss-testi__role">Mahasiswi Desain, 21 th</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="ss-testi__card ss-testi__card--dark" id="testi-2">
+            <div class="ss-testi__stars" aria-label="5 bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="ss-testi__quote">"Kita dateng berlima buat konten bareng &mdash; chaos tapi menyenangkan wkwk. File langsung masuk WA sebelum kita sampai parkiran. Harganya juga jauh lebih reasonable dari studio biasa. Starshot is it fr."</p>
+            <footer class="ss-testi__author">
+              <div class="ss-testi__avatar" aria-hidden="true">DK</div>
+              <div>
+                <cite class="ss-testi__name">Dimas K.</cite>
+                <span class="ss-testi__role">Content Creator, 23 th</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="ss-testi__card" id="testi-3">
+            <div class="ss-testi__stars" aria-label="5 bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="ss-testi__quote">"Couple session paling no-pressure yang pernah aku lakuin. Ga ada yang judging pas aku pose aneh-aneh hehe. Hasilnya natural banget, bukan kayak hasil edit berlebihan. Wajib coba sama pasangan!"</p>
+            <footer class="ss-testi__author">
+              <div class="ss-testi__avatar" aria-hidden="true">AP</div>
+              <div>
+                <cite class="ss-testi__name">Annisa P.</cite>
+                <span class="ss-testi__role">Pasangan Muda, 22 th</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING CTA -->
+  <section id="booking" class="ss-booking" aria-labelledby="booking-heading">
+    <div class="container-xl">
+      <div class="ss-booking__inner">
+        <p class="ss-label ss-label--light">Reservasi Sesi</p>
+        <h2 id="booking-heading" class="ss-booking__title">Siap untuk momen<br /><em>yang layak dikenang?</em></h2>
+        <p class="ss-booking__sub">Slot terbatas per hari. Booking sekarang sebelum jadwalmu terisi.</p>
+        <div class="ss-booking__actions">
+          <a href="https://wa.me/6281234567890?text=Halo%20Starshot%2C%20aku%20mau%20booking%20sesi%20foto%20dong!" class="ss-btn ss-btn--light" id="booking-wa" target="_blank" rel="noopener noreferrer" aria-label="Booking via WhatsApp">Booking via WhatsApp &rarr;</a>
+          <a href="mailto:hello@starshot.id" class="ss-btn ss-btn--ghost-light" id="booking-email">Atau kirim email</a>
+        </div>
+        <address class="ss-booking__address" aria-label="Alamat studio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Jl. Kemang Raya No. 12, Jakarta Selatan &middot; <a href="https://maps.google.com" target="_blank" rel="noopener">Buka di Maps</a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ss-footer" role="contentinfo">
+    <div class="container-xl d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <span class="ss-footer__brand">STARSHOT</span>
+      <nav aria-label="Footer navigation">
+        <ul class="ss-footer__links" role="list">
+          <li><a href="#why">Kenapa Kami</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#pricing">Paket</a></li>
+          <li><a href="mailto:hello@starshot.id">Kontak</a></li>
+        </ul>
+      </nav>
+      <p class="ss-footer__copy">&copy; 2026 Starshot Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script type="module" src="gallery-carousel.js"></script>
+  <script>
+    (() => {
+      const nav     = document.getElementById('main-nav');
+      const burger  = document.getElementById('burger-btn');
+      const drawer  = document.getElementById('mobile-nav');
+      const links   = drawer.querySelectorAll('.mobile-link, .ss-btn');
+
+      // Scroll-aware nav background
+      const onScroll = () => nav.classList.toggle('ss-nav--scrolled', window.scrollY > 60);
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // Burger toggle
+      const toggleMenu = (force) => {
+        const isOpen = force !== undefined ? force : !drawer.classList.contains('is-open');
+        drawer.classList.toggle('is-open', isOpen);
+        burger.setAttribute('aria-expanded', isOpen);
+        drawer.setAttribute('aria-hidden', !isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      };
+      burger.addEventListener('click', () => toggleMenu());
+
+      // Close on link click
+      links.forEach(link => link.addEventListener('click', () => toggleMenu(false)));
+
+      // Close on Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') toggleMenu(false);
+      });
+    })();
+  </script>
+</body>
+</html>
