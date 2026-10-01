@@ -202,8 +202,8 @@ class GalleryCarousel extends LitElement {
     :host {
       display: block;
       width: 100%;
-      --gap: 12px;
-      --card-radius: 4px;
+      --gap: 16px;
+      --card-radius: 6px;
     }
 
     /* Filter tabs */
@@ -211,37 +211,42 @@ class GalleryCarousel extends LitElement {
       display: flex;
       gap: 0.5rem;
       flex-wrap: wrap;
-      padding: 0 clamp(20px, 4vw, 60px);
-      margin-bottom: 1.5rem;
+      padding: 0;
+      margin-bottom: 2rem;
     }
     .gc-tag {
       font-family: 'Inter', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.72rem;
       font-weight: 500;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      padding: 0.45rem 1.1rem;
+      padding: 0.5rem 1.25rem;
       border: 1px solid #e2e2e2;
-      border-radius: 4px;
-      background: transparent;
+      border-radius: 9999px;
+      background: #ffffff;
       cursor: pointer;
-      color: #5a5a5a;
-      transition: background 150ms, color 150ms, border-color 150ms;
+      color: #555555;
+      transition: all 180ms ease;
     }
-    .gc-tag[aria-pressed="true"],
-    .gc-tag:hover {
-      background: #0a0a0a;
+    .gc-tag[aria-pressed="true"] {
+      background: #0d0d0d;
       color: #ffffff;
-      border-color: #0a0a0a;
+      border-color: #0d0d0d;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .gc-tag:not([aria-pressed="true"]):hover {
+      background: #f7f6f2;
+      border-color: #111111;
+      color: #111111;
     }
 
     /* Masonry grid */
     .gc-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: 260px;
+      grid-auto-rows: 270px;
       gap: var(--gap);
-      padding: 0 clamp(20px, 4vw, 60px);
+      padding: 0;
     }
 
     /* Individual card */
@@ -283,14 +288,17 @@ class GalleryCarousel extends LitElement {
 
     .gc-overlay-tag {
       font-family: 'Inter', sans-serif;
-      font-size: 0.65rem;
+      font-size: 0.68rem;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.8);
-      border: 1px solid rgba(255,255,255,0.3);
-      padding: 0.25rem 0.65rem;
-      border-radius: 2px;
+      color: rgba(255, 255, 255, 0.95);
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
     }
 
     /* Skeleton loader */
